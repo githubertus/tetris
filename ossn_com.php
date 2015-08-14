@@ -16,7 +16,7 @@ function ossn_tetris_init() {
 	ossn_register_page('tetris', 'ossn_tetris_pages');
 	  if (ossn_isLoggedin()) {       
 		
-    	$icon = ossn_site_url('components/tetris/img/tetris.png');
+    	$icon = ossn_site_url('components/Tetris/img/tetris.png');
     	ossn_register_sections_menu('newsfeed', array(
         	'text' => ossn_print('com:ossn:tetris'),
         	'url' => ossn_site_url('tetris'),
@@ -33,7 +33,7 @@ function ossn_tetris_pages($pages) {
             ossn_error_page();
    }
 $title = ossn_print('com:ossn:tetris');
-   $contents['content'] = ossn_view('components/tetris/pages/tetris');
+   $contents['content'] = ossn_plugin_view('tetris/pages/tetris');
    $content = ossn_set_page_layout('contents', $contents);
    echo ossn_view_page($title, $content);
 }
