@@ -1,0 +1,7 @@
+Tetris v3.0
+
+* cleanup of directory structure
+* fixed ossn_register_sections_menu() incompatibilty with Ossn 4.x
+* removed iframe from starting page
+* adapted html, css and script to run inside Ossn page
+* sound added 
