@@ -34,7 +34,7 @@ function tetris_init() {
 		// register menu entry in left sidebar menu
     		ossn_register_sections_menu('newsfeed', array(
 		'name' => 'tetris',  // the icon will be derived from this name - see css file for further details
-        	'text' => ossn_print('com:ossn:tetris'),
+        	'text' => ossn_print('com:tetris:title'),
         	'url' => ossn_site_url('tetris'),
 		'section' => 'links'
 	    ));		
