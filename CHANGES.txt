@@ -1,5 +1,8 @@
-Tetris v3.0
+Tetris v3.1
+* refined event handler to listen on #tetris-body instead of document
+* slight css changes to allow more score digits
 
+Tetris v3.0
 * cleanup of directory structure
 * fixed ossn_register_sections_menu() incompatibilty with Ossn 4.x
 * removed iframe from starting page
