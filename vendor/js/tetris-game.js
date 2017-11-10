@@ -1,4 +1,4 @@
-		function initBoard() { 
+			function initBoard() { 
 				for (var y = LINES_MAX_Y, ymax = 0; y > ymax; y --) { 
 					for (var x = 1, xmax = LINES_MAX_X + 1; x < xmax; x ++) { 
 						$('#board').append('<div class="square" id="s-' + y + '-' + x + '"></div>');
@@ -132,6 +132,11 @@
 			
 			$(document).ready(function() { 
 
+				$("#tetris-body").attr("tabindex", "0");
+				$( "#tetris-body" ).mouseover(function() {
+					$("#tetris-body").focus();
+				});
+
 				loadAllSound();
 
 				if ($("#control").css("display") !== "none") { 
@@ -224,7 +229,7 @@
 					jQuery('#tetris-body').trigger(e);
 				}
 				
-				$(document).keydown(function(e) { 
+				$("#tetris-body").keydown(function(e) { 
 					e.preventDefault();
 					e.stopPropagation();
 					if ( $("#help").css("display") !== "none" ) { 
