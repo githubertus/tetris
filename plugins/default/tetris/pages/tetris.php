@@ -21,7 +21,7 @@
 		<h1>Tetris</h1>
 		<h2>Lucio PANEPINTO</h2>
 		<h3>2014</h3>
-		<span class="start invisible">- Press a button to start -</span>
+		<span class="start invisible">- Click to start -</span>
 		<div id="scores">
 			<h2>High scores</h2>
 			<table align="center" border="0" cellPadding="2" cellSpacing="0">
