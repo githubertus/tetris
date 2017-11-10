@@ -126,7 +126,6 @@
 #level, #lines, #score, #next { 
 	float: left;
 	position: relative;
-	width: 100px;
 	height: 85px;
 	text-transform: uppercase;
 	font-size: 34px;
@@ -142,7 +141,6 @@
 }
 #level span, #lines span, #score span { 
 	color: #fafba0;
-	font-size: 38px;
 	letter-spacing: 1px;
 	padding-left: 15px;
 }
